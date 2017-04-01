@@ -1,5 +1,7 @@
 # fp-utils
 
+These docs are a WIP.  Meanwhile, you can read the unit tests to get a better sense of what these utilities can do for you.
+
 ## use cases
 
 ### safe property access
