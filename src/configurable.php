@@ -80,7 +80,7 @@ class Configurable implements \Iterator
      * @param $keys
      * @return mixed
      */
-    public function props($keys)
+    public function props($keys=null)
     {
         if (empty($keys)) {
             return $this->data;
