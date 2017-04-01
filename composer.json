@@ -1,0 +1,21 @@
+{
+    "name": "matchdav/fp-utils",
+    "description": "functional programming utilities",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "^6.0.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mcd",
+            "email": "matthew.christopher.davidson@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+      "psr-4" : {
+         "matchdav\\Fp\\" : "src"
+      }
+    }
+}
