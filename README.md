@@ -62,6 +62,6 @@ $concat = function ($a, $b, $c) {
 $concatCat = Functional::curry($concat,'cat');
 $prependCat = Functional::curryRight($concat,'cat');
 assert(is_callable($concatCat('dog'));
-assert($concatCat('dog')('mouse') === 'mouse dog cat');
-assert($prependCat('dog')('mouse') === 'cat dog mouse');
+assert($concatCat('dog')('mouse') === 'mouse, dog, cat');
+assert($prependCat('dog')('mouse') === 'cat, dog, mouse');
 ```
