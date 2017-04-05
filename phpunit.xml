@@ -1,0 +1,8 @@
+<phpunit>
+  <testsuites>
+    <file>tests/access.php</file>
+    <file>tests/collections.php</file>
+    <file>tests/configurable.php</file>
+    <file>tests/functional.php</file>
+  </testsuites>
+</phpunit>

@@ -118,7 +118,7 @@ class Functional
                 return \call_user_func_array($method, $newArgs);
             }
             return function ($prop) use ($props, $curried) {
-                $props[] = $prop;
+                $props = array_merge($props,(array) $prop);
                 return $curried($props);
             };
         };

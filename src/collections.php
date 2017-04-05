@@ -9,7 +9,7 @@ class Collections
      */
     public static function isIterable($topic)
     {
-        return is_array($topic) || is_object($topic) || $topic instanceof \stdClass;
+        return is_array($topic) || is_object($topic) || $topic instanceof \stdClass || $topic instanceof \Iterator;
     }
     /**
      * @param $topic
@@ -55,7 +55,7 @@ class Collections
         foreach ($topic as $key => $value) {
             $result[$key] = $callable($value);
         }
-        if (is_object($topic)) {
+        if (is_object($topic) && !empty($topic)) {
             return (object) $result;
         }
         return $result;
